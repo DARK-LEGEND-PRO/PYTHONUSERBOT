@@ -28,7 +28,123 @@
 
 <details>
   <summary> <h3>HOSTING</h3> </summary>
+ 👇👇DEPLOY👇👇
 
+2
+
+
+
+3
+
+[PYTHON](https://github.com/DARK-LEGEND-PRO/PYTHONBOT-V9)
+
+4
+
+ 
+
+ Generate String Session 
+
+5
+
+
+
+6
+
+- Termux
+
+7
+
+   - Install git package
+
+8
+
+          `pkg install git`
+
+9
+
+   - Clone this repository.
+
+10
+
+          `git clone https://github.com/DARK-LEGEND-PRO/PYTHONBOT-V9git`
+
+11
+
+   - Then Do
+
+12
+
+          `cd PYTHONBOT`
+
+13
+
+   - Run String Generator By
+
+14
+
+          `bash string.sh`
+
+15
+
+   - Then Fill The Required Details.
+
+16
+
+   - API ID, API HASH, PHONE NUMBER (WITH COUNTRY CODE)
+
+17
+
+18
+
+- Repl Run
+
+19
+
+
+
+20
+
+
+
+21
+
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@KrishnaJaiswal1/LEGENDBOT#main.py) 
+
+22
+
+
+
+23
+
+   - Click On Generate string
+
+24
+
+   - Then Click On Green Play Button.
+
+25
+
+   - Wait for a while then fill the details.
+
+26
+
+   - String will be saved in your Saved Message.
+
+27
+
+
+
+28
+
+
+
+29
+
+
+
+30
+
+  HOSTING 
 - Choose A Hosting Site. And fill the mandatory vars.
 
 ## Deploys
