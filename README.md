@@ -1,224 +1,50 @@
-👇👇DEPLOY👇👇
+##### 🎶 Music Dan Video Player UserBot 🎶
+### 🤖 Telegram UserBot Untuk Memutar Lagu Dan Video Di Obrolan Suara Telegram.
 
-[PYTHON](https://github.com/DARK-LEGEND-PRO/PYTHONBOT-V9)
-  <summary> <h2>Generate String Session</h2> </summary>
+## ✨ Didukung Oleh 
+- [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
+- [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-- Termux
-    - Install git package
-           `pkg install git`
-    - Clone this repository.
-           `git clone https://github.com/DARK-LEGEND-PRO/PYTHONBOT-V9git`
-    - Then Do
-           `cd PYTHONBOT`
-    - Run String Generator By
-           `bash string.sh`
-    - Then Fill The Required Details.
-    - API ID, API HASH, PHONE NUMBER (WITH COUNTRY CODE)
- 
-- Repl Run
 
+## 📝 Persyaratan
+- Python 3.8+
+- FFMPEG
+- Nodejs v16+
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@KrishnaJaiswal1/LEGENDBOT#main.py) 
+### 🛠 MENU BANTUAN
 
-    - Click On Generate string
-    - Then Click On Green Play Button.
-    - Wait for a while then fill the details.
-    - String will be saved in your Saved Message.
-</details>
+#### ⚡ PERINTAH UNTUK SEMUA ORANG
+- `/play [judul lagu | link youtube | balas file audio]` - untuk memutar lagu
+- `/vplay [judul video | link youtube | balas file video]` - untuk memutar video
+- `/playlist` untuk melihat daftar putar
+- `/ping` - untuk cek status
+- `/help` - untuk melihat daftar perintah
 
-<details>
-  <summary> <h3>HOSTING</h3> </summary>
- 👇👇DEPLOY👇👇
+#### ⚡ PERINTAH UNTUK SEMUA ADMIN
+- `/resume` - untuk melanjutkan pemutaran lagu atau video
+- `/pause` - untuk untuk menjeda pemutaran lagu atau video
+- `/skip` - untuk melewati lagu atau video
+- `/end` - untuk mengakhiri pemutaran
 
-2
+### 💡 Deployment
 
+### 💜 Heroku
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fjgaming212/Userbot-Music)
 
-3
 
-[PYTHON](https://github.com/DARK-LEGEND-PRO/PYTHONBOT-V9)
+### 📚 Variabel Yang Dibutuhkan
+- `API_ID` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
+- `API_HASH` - Dapatkan Dari [my.telegram.org](https://my.telegram.org)
+- `SESSION` - Sesi String Pyrogram.Dapatkan String Dari [Sini](https://replit.com/@fjgaming212/StringSession#main.py) Pilih P jangan T
+- `SUDO_USER` - ID Akun Telegram Yang Digunakan Sebagai Admin,pergi ke [@MissRose_Bot](t.me/MissRose_Bot) terus ketik /id
+- `HNDLR` - Handler untuk userbot mu
 
-4
 
- 
-
- Generate String Session 
-
-5
-
-
-
-6
-
-- Termux
-
-7
-
-   - Install git package
-
-8
-
-          `pkg install git`
-
-9
-
-   - Clone this repository.
-
-10
-
-          `git clone https://github.com/DARK-LEGEND-PRO/PYTHONBOT-V9git`
-
-11
-
-   - Then Do
-
-12
-
-          `cd PYTHONBOT`
-
-13
-
-   - Run String Generator By
-
-14
-
-          `bash string.sh`
-
-15
-
-   - Then Fill The Required Details.
-
-16
-
-   - API ID, API HASH, PHONE NUMBER (WITH COUNTRY CODE)
-
-17
-
-18
-
-- Repl Run
-
-19
-
-
-
-20
-
-
-
-21
-
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-yellowgreen)](https://replit.com/@KrishnaJaiswal1/LEGENDBOT#main.py) 
-
-22
-
-
-
-23
-
-   - Click On Generate string
-
-24
-
-   - Then Click On Green Play Button.
-
-25
-
-   - Wait for a while then fill the details.
-
-26
-
-   - String will be saved in your Saved Message.
-
-27
-
-
-
-28
-
-
-
-29
-
-
-
-30
-
-  HOSTING 
-- Choose A Hosting Site. And fill the mandatory vars.
-
-## Deploys
-
-- You Can Deploy it on 
-    - [Zeet](https://zeet.co/new)
-    - [Uffizzi](https://uffizzi.com)
-    - Any Other VPS.
-    - No support for Termux Yet.
-
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DARK-LEGEND-PRO/PYTHONBOT-V9/)
-
-
-## Mandatory Vars
-
-- Some of the environment variables are mandatory.
-- These are listed below.
-    - `APP_ID`:   You can get this value from [here](https://my.telegram.org)
-    - `API_HASH`:   You can get this value from [here](https://my.telegram.org)
-    - `ENV`:   `ANYTHING`
-    - `PYTHON_STRING`:   You can get this value from running `python3 string_session.py` in termux after cloning this repo. Or just using [repl run](https://repl.it/@itzglegendvv/PYTHONBOT4#main.py)
-    - `LOG_GROUP`:   Make a Channel Or Group and get it's id.
-    - `DATABASE_URL`:   Make a database on elephant sql and paste the url.
-    - `DB_URI`:   Same as `DATABASE_URL`
-    - `BOT_TOKEN`:   Make a Bot from [Botfather](https://t.me/botfather) and paste the bot token here.
-    - `BOT_USERNAME`:   Paste the Username of bot that you made from [BotFather](https://t.me/botfather).
-- The userbot will not work without setting the mandatory vars.
-
-</details>
-
-<details>
-  <summary> <h4>OFFICIAL SUPPORT ✅</h4> </summary>
-
-```
-Get help regarding setting up 
-your PYTHONBOT in our official 
-support Group and get updates
-notifications in Update Channel.
-```
-
-<a href="https://t.me/Python_Userbot_Support"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
-
-<a href="https://t.me/Python_Userbot_Support"><img src="https://img.shields.io/badge/Join-Support%20Group-red.svg?style=for-the-badge&logo=Telegram"></a>
-
-[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Legendl_Mr_Hacker)
-
-</details>
-
-<details>
-  <summary> <h4>• LICENSE •</h4> </summary>
-
-![](https://www.gnu.org/graphics/gplv3-or-later.png)
-
-Copyright (C) 2021 LEGEND-LX
-
-Poject [PYTHONBOT](https://github.com/DARK-LEGEND-PRO/PYTHONBOT-V9) is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-</details>
-
-<details>
-  <summary> <h4>• Credits 🏅 •</h4> </summary>
-
-• [LEGEND-LX](https://github.com/LEGEND-LX):OWNER
- 
-</details>
-
+### KREDIT ✨
+- **[Skyzo](https://github.com/ridho17-ind)**
+- **[Tomi](https://github.com/XtomiSN)**
+- **[FlicksSupport](https://t.me/FlicksSupport)**
+- **[Group Music Random](https://t.me/GroupMusicRandom)**
+- **[Dan](https://github.com/delivrance) For [Pyrogram](https://github.com/pyrogram/pyrogram)**
+- **[Laky](https://github.com/Laky-64) For [PyTgCalls](https://github.com/pytgcalls/pytgcalls)**

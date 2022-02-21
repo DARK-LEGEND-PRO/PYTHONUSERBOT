@@ -1,0 +1,48 @@
+2022-02-21T02:35:54.370731+00:00 app[worker.1]: pytgcalls.exceptions.NodeJSNotInstalled: Please install node (15.0.0+)
+2022-02-21T02:35:54.374948+00:00 app[worker.1]: INFO:pytgcalls:Node.js stopped
+2022-02-21T02:35:54.821286+00:00 heroku[worker.1]: Process exited with status 1
+2022-02-21T02:35:54.915266+00:00 heroku[worker.1]: State changed from up to crashed
+2022-02-21T02:36:38.372292+00:00 app[api]: Starting process with command `pip install node` by user kktheuniqueboy@gmail.com
+2022-02-21T02:36:38.421309+00:00 heroku[run.2405]: State changed from starting to complete
+2022-02-21T02:39:27.592210+00:00 app[api]: Set PROJECT_NAME config vars by user kktheuniqueboy@gmail.com
+2022-02-21T02:39:27.592210+00:00 app[api]: Release v29 created by user kktheuniqueboy@gmail.com
+2022-02-21T02:39:28.816776+00:00 heroku[worker.1]: State changed from crashed to starting
+2022-02-21T02:39:44.389426+00:00 heroku[worker.1]: Starting process with command `/bin/sh -c python3\ -m\ VCsMusicBot`
+2022-02-21T02:39:45.035245+00:00 heroku[worker.1]: State changed from starting to up
+2022-02-21T02:39:54.224874+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("_start") in group 0 from "VCsMusicBot.modules.private"
+2022-02-21T02:39:54.224930+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("gstart") in group 0 from "VCsMusicBot.modules.private"
+2022-02-21T02:39:54.224985+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("_help") in group 0 from "VCsMusicBot.modules.private"
+2022-02-21T02:39:54.225043+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] CallbackQueryHandler("help_answer") in group 0 from "VCsMusicBot.modules.private"
+2022-02-21T02:39:54.225093+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("ghelp") in group 0 from "VCsMusicBot.modules.private"
+2022-02-21T02:39:54.230821+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("song") in group 0 from "VCsMusicBot.modules.song"
+2022-02-21T02:39:54.230902+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("jssong") in group 0 from "VCsMusicBot.modules.song"
+2022-02-21T02:39:54.231019+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("deezsong") in group 0 from "VCsMusicBot.modules.song"
+2022-02-21T02:39:54.231088+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("ytmusic") in group 0 from "VCsMusicBot.modules.song"
+2022-02-21T02:39:54.232988+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("addchannel") in group 0 from "VCsMusicBot.modules.userbotjoin"
+2022-02-21T02:39:54.233099+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("bye") in group 0 from "VCsMusicBot.modules.userbotjoin"
+2022-02-21T02:39:54.233176+00:00 app[worker.1]: INFO:pyrogram.client:[:memory:] [LOAD] MessageHandler("addcchannel") in group 0 from "VCsMusicBot.modules.userbotjoin"
+2022-02-21T02:39:54.243274+00:00 app[worker.1]: /bin/sh: 1: node: not found
+2022-02-21T02:39:54.243657+00:00 app[worker.1]: Traceback (most recent call last):
+2022-02-21T02:39:54.243664+00:00 app[worker.1]:   File "/usr/local/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+2022-02-21T02:39:54.243844+00:00 app[worker.1]:     return _run_code(code, main_globals, None,
+2022-02-21T02:39:54.243847+00:00 app[worker.1]:   File "/usr/local/lib/python3.9/runpy.py", line 87, in _run_code
+2022-02-21T02:39:54.243958+00:00 app[worker.1]:     exec(code, run_globals)
+2022-02-21T02:39:54.243968+00:00 app[worker.1]:   File "/app/VCsMusicBot/__main__.py", line 24, in <module>
+2022-02-21T02:39:54.244028+00:00 app[worker.1]:     run()
+2022-02-21T02:39:54.244030+00:00 app[worker.1]:   File "/usr/local/lib/python3.9/site-packages/pytgcalls/sync.py", line 34, in async_to_sync_wrap
+2022-02-21T02:39:54.244099+00:00 app[worker.1]:     return loop.run_until_complete(coroutine)
+2022-02-21T02:39:54.244106+00:00 app[worker.1]:   File "/usr/local/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+2022-02-21T02:39:54.244359+00:00 app[worker.1]:     return future.result()
+2022-02-21T02:39:54.244362+00:00 app[worker.1]:   File "/usr/local/lib/python3.9/site-packages/pytgcalls/methods/utilities/run.py", line 31, in run
+2022-02-21T02:39:54.244454+00:00 app[worker.1]:     await self.start()
+2022-02-21T02:39:54.244457+00:00 app[worker.1]:   File "/usr/local/lib/python3.9/site-packages/pytgcalls/methods/utilities/start.py", line 35, in start
+2022-02-21T02:39:54.244535+00:00 app[worker.1]:     self._env_checker.check_environment()
+2022-02-21T02:39:54.244537+00:00 app[worker.1]:   File "/usr/local/lib/python3.9/site-packages/pytgcalls/environment.py", line 33, in check_environment
+2022-02-21T02:39:54.244636+00:00 app[worker.1]:     raise NodeJSNotInstalled(
+2022-02-21T02:39:54.244661+00:00 app[worker.1]: pytgcalls.exceptions.NodeJSNotInstalled: Please install node (15.0.0+)
+2022-02-21T02:39:54.245361+00:00 app[worker.1]: INFO:pytgcalls:Node.js stopped
+2022-02-21T02:39:54.704860+00:00 heroku[worker.1]: Process exited with status 1
+2022-02-21T02:39:54.961218+00:00 heroku[worker.1]: State changed from up to crashed
+2022-02-21T02:39:54.987231+00:00 heroku[worker.1]: State changed from crashed to starting
+2022-02-21T02:40:08.656105+00:00 heroku[worker.1]: Starting process with command `/bin/sh -c python3\ -m\ VCsMusicBot`
+2022-02-21T02:40:09.341923+00:00 heroku[worker.1]: State changed from starting to up
