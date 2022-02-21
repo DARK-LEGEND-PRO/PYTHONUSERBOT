@@ -1,0 +1,51 @@
+
+
+
+_get_repolink () {
+    local regex
+    regex='(https?)://github.com/.+/.+'
+    if [[ $PYTHON_REPO == "PYTHONBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0xFR0VORC1MWC9QWVRIT05VU0VSQk9UL2FyY2hpdmUvbWFpbi56aXA" | base64 -d
+    elif [[ $PYTHON_REPO == "PYTHONBOT" ]]
+    then
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0xFR0VORC1MWC9QWVRIT05VU0VSQk9UL2FyY2hpdmUvbWFpbi56aXA" | base64 -d
+    elif [[ $PYTHON_REPO =~ $regex ]]
+    then
+        if [[ $PYTHON_REPO_BRANCH ]]
+        then
+            echo "${PYTHON_REPO}/archive/${PYTHON_REPO_BRANCH}.zip"
+        else
+            echo "${PYTHON_REPO}/archive/master.zip"
+        fi
+    else
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0xFR0VORC1MWC9QWVRIT05VU0VSQk9UL2FyY2hpdmUvbWFpbi56aXA" | base64 -d
+    fi
+}
+
+
+_set_bot () {
+    local zippath
+    zippath="PYTHONBOT.zip"
+    echo "  Downloading 💥💫PythonBot~Pro💫💥 Source Code..."
+    wget -q $(_get_repolink) -O "$zippath"
+    echo "  Unpacking Data ..."
+    PYTHONPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    unzip -qq "$zippath"
+    echo "Done"
+    echo "  💥💫PythonBot~Pro💫💥 Cleaning.."
+    rm -rf "$zippath"
+    sleep 5
+    cd $PYTHONPATH
+    echo "   ✨☄️ ѕταяτιиg ѕмοοτнєѕτ 💥💫Python𝕭ø𝖙💫💥 ✨☄️     "
+    echo "
+    PYTHONBOT
+    "
+
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m userbot
+}
+
+_set_bot
+
+
